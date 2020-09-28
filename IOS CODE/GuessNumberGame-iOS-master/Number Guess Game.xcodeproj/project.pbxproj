@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F33046224004F35005B54A4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F33046124004F35005B54A4 /* SettingViewController.swift */; };
+		3F3304662400507C005B54A4 /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3304652400507C005B54A4 /* InstructionViewController.swift */; };
+		3F441D4B2400806D009855DD /* GameUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F441D4A2400806D009855DD /* GameUtility.swift */; };
+		3F441D4E2400837D009855DD /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3F441D4D2400837D009855DD /* bg.mp3 */; };
+		3F441D502400E7AB009855DD /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F441D4F2400E7AB009855DD /* GameConfig.swift */; };
+		3F4693C52400548E00AE1A88 /* TryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4693C42400548E00AE1A88 /* TryViewController.swift */; };
+		3F4693C7240054B800AE1A88 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4693C6240054B800AE1A88 /* PlayViewController.swift */; };
+		3F4693C92400550600AE1A88 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4693C82400550600AE1A88 /* GameOverViewController.swift */; };
+		3FAB2E1F23FB49870049A630 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB2E1E23FB49870049A630 /* Player.swift */; };
+		3FAB2E2123FB4F7C0049A630 /* GameLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAB2E2023FB4F7C0049A630 /* GameLevel.swift */; };
+		3FAD201D23FB432300A44244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD201C23FB432300A44244 /* AppDelegate.swift */; };
+		3FAD201F23FB432300A44244 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD201E23FB432300A44244 /* SceneDelegate.swift */; };
+		3FAD202123FB432300A44244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD202023FB432300A44244 /* ViewController.swift */; };
+		3FAD202423FB432300A44244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD202223FB432300A44244 /* Main.storyboard */; };
+		3FAD202623FB432600A44244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD202523FB432600A44244 /* Assets.xcassets */; };
+		3FAD202923FB432600A44244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAD202723FB432600A44244 /* LaunchScreen.storyboard */; };
+		3FAD203423FB432600A44244 /* Number_Guess_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD203323FB432600A44244 /* Number_Guess_GameTests.swift */; };
+		3FAD203F23FB432600A44244 /* Number_Guess_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAD203E23FB432600A44244 /* Number_Guess_GameUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FAD203023FB432600A44244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FAD201123FB432300A44244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FAD201823FB432300A44244;
+			remoteInfo = "Number Guess Game";
+		};
+		3FAD203B23FB432600A44244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FAD201123FB432300A44244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FAD201823FB432300A44244;
+			remoteInfo = "Number Guess Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F33046124004F35005B54A4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		3F3304652400507C005B54A4 /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		3F441D4A2400806D009855DD /* GameUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUtility.swift; sourceTree = "<group>"; };
+		3F441D4D2400837D009855DD /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
+		3F441D4F2400E7AB009855DD /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
+		3F4693C42400548E00AE1A88 /* TryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryViewController.swift; sourceTree = "<group>"; };
+		3F4693C6240054B800AE1A88 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		3F4693C82400550600AE1A88 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		3F4ABB1223FC609D00A71044 /* BarboneCode.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BarboneCode.playground; sourceTree = "<group>"; };
+		3FAB2E1E23FB49870049A630 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		3FAB2E2023FB4F7C0049A630 /* GameLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLevel.swift; sourceTree = "<group>"; };
+		3FAD201923FB432300A44244 /* Mad Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mad Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAD201C23FB432300A44244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FAD201E23FB432300A44244 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3FAD202023FB432300A44244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FAD202323FB432300A44244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FAD202523FB432600A44244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FAD202823FB432600A44244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FAD202A23FB432600A44244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAD202F23FB432600A44244 /* Number Guess GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Number Guess GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAD203323FB432600A44244 /* Number_Guess_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number_Guess_GameTests.swift; sourceTree = "<group>"; };
+		3FAD203523FB432600A44244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FAD203A23FB432600A44244 /* Number Guess GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Number Guess GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FAD203E23FB432600A44244 /* Number_Guess_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Number_Guess_GameUITests.swift; sourceTree = "<group>"; };
+		3FAD204023FB432600A44244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FAD201623FB432300A44244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAD202C23FB432600A44244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAD203723FB432600A44244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F441D4C24008368009855DD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				3F441D4D2400837D009855DD /* bg.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		3FAB2E1D23FB493C0049A630 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3F4ABB1223FC609D00A71044 /* BarboneCode.playground */,
+				3FAB2E1E23FB49870049A630 /* Player.swift */,
+				3FAB2E2023FB4F7C0049A630 /* GameLevel.swift */,
+				3F441D4A2400806D009855DD /* GameUtility.swift */,
+				3F441D4F2400E7AB009855DD /* GameConfig.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3FAD201023FB432300A44244 = {
+			isa = PBXGroup;
+			children = (
+				3FAD201B23FB432300A44244 /* Number Guess Game */,
+				3FAD203223FB432600A44244 /* Number Guess GameTests */,
+				3FAD203D23FB432600A44244 /* Number Guess GameUITests */,
+				3FAD201A23FB432300A44244 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FAD201A23FB432300A44244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD201923FB432300A44244 /* Mad Numbers.app */,
+				3FAD202F23FB432600A44244 /* Number Guess GameTests.xctest */,
+				3FAD203A23FB432600A44244 /* Number Guess GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FAD201B23FB432300A44244 /* Number Guess Game */ = {
+			isa = PBXGroup;
+			children = (
+				3F441D4C24008368009855DD /* Audio */,
+				3FAB2E1D23FB493C0049A630 /* Source */,
+				3FAD201C23FB432300A44244 /* AppDelegate.swift */,
+				3FAD201E23FB432300A44244 /* SceneDelegate.swift */,
+				3FAD202023FB432300A44244 /* ViewController.swift */,
+				3FAD202223FB432300A44244 /* Main.storyboard */,
+				3FAD202523FB432600A44244 /* Assets.xcassets */,
+				3FAD202723FB432600A44244 /* LaunchScreen.storyboard */,
+				3FAD202A23FB432600A44244 /* Info.plist */,
+				3F33046124004F35005B54A4 /* SettingViewController.swift */,
+				3F3304652400507C005B54A4 /* InstructionViewController.swift */,
+				3F4693C42400548E00AE1A88 /* TryViewController.swift */,
+				3F4693C6240054B800AE1A88 /* PlayViewController.swift */,
+				3F4693C82400550600AE1A88 /* GameOverViewController.swift */,
+			);
+			path = "Number Guess Game";
+			sourceTree = "<group>";
+		};
+		3FAD203223FB432600A44244 /* Number Guess GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD203323FB432600A44244 /* Number_Guess_GameTests.swift */,
+				3FAD203523FB432600A44244 /* Info.plist */,
+			);
+			path = "Number Guess GameTests";
+			sourceTree = "<group>";
+		};
+		3FAD203D23FB432600A44244 /* Number Guess GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3FAD203E23FB432600A44244 /* Number_Guess_GameUITests.swift */,
+				3FAD204023FB432600A44244 /* Info.plist */,
+			);
+			path = "Number Guess GameUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FAD201823FB432300A44244 /* Number Guess Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAD204323FB432600A44244 /* Build configuration list for PBXNativeTarget "Number Guess Game" */;
+			buildPhases = (
+				3FAD201523FB432300A44244 /* Sources */,
+				3FAD201623FB432300A44244 /* Frameworks */,
+				3FAD201723FB432300A44244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Number Guess Game";
+			productName = "Number Guess Game";
+			productReference = 3FAD201923FB432300A44244 /* Mad Numbers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3FAD202E23FB432600A44244 /* Number Guess GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAD204623FB432600A44244 /* Build configuration list for PBXNativeTarget "Number Guess GameTests" */;
+			buildPhases = (
+				3FAD202B23FB432600A44244 /* Sources */,
+				3FAD202C23FB432600A44244 /* Frameworks */,
+				3FAD202D23FB432600A44244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FAD203123FB432600A44244 /* PBXTargetDependency */,
+			);
+			name = "Number Guess GameTests";
+			productName = "Number Guess GameTests";
+			productReference = 3FAD202F23FB432600A44244 /* Number Guess GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3FAD203923FB432600A44244 /* Number Guess GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FAD204923FB432600A44244 /* Build configuration list for PBXNativeTarget "Number Guess GameUITests" */;
+			buildPhases = (
+				3FAD203623FB432600A44244 /* Sources */,
+				3FAD203723FB432600A44244 /* Frameworks */,
+				3FAD203823FB432600A44244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FAD203C23FB432600A44244 /* PBXTargetDependency */,
+			);
+			name = "Number Guess GameUITests";
+			productName = "Number Guess GameUITests";
+			productReference = 3FAD203A23FB432600A44244 /* Number Guess GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FAD201123FB432300A44244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Kaiyum;
+				TargetAttributes = {
+					3FAD201823FB432300A44244 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					3FAD202E23FB432600A44244 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3FAD201823FB432300A44244;
+					};
+					3FAD203923FB432600A44244 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3FAD201823FB432300A44244;
+					};
+				};
+			};
+			buildConfigurationList = 3FAD201423FB432300A44244 /* Build configuration list for PBXProject "Number Guess Game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3FAD201023FB432300A44244;
+			productRefGroup = 3FAD201A23FB432300A44244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FAD201823FB432300A44244 /* Number Guess Game */,
+				3FAD202E23FB432600A44244 /* Number Guess GameTests */,
+				3FAD203923FB432600A44244 /* Number Guess GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FAD201723FB432300A44244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAD202923FB432600A44244 /* LaunchScreen.storyboard in Resources */,
+				3F441D4E2400837D009855DD /* bg.mp3 in Resources */,
+				3FAD202623FB432600A44244 /* Assets.xcassets in Resources */,
+				3FAD202423FB432300A44244 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAD202D23FB432600A44244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAD203823FB432600A44244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FAD201523FB432300A44244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4693C52400548E00AE1A88 /* TryViewController.swift in Sources */,
+				3F4693C7240054B800AE1A88 /* PlayViewController.swift in Sources */,
+				3FAD202123FB432300A44244 /* ViewController.swift in Sources */,
+				3FAB2E1F23FB49870049A630 /* Player.swift in Sources */,
+				3F4693C92400550600AE1A88 /* GameOverViewController.swift in Sources */,
+				3F3304662400507C005B54A4 /* InstructionViewController.swift in Sources */,
+				3FAB2E2123FB4F7C0049A630 /* GameLevel.swift in Sources */,
+				3F441D502400E7AB009855DD /* GameConfig.swift in Sources */,
+				3FAD201D23FB432300A44244 /* AppDelegate.swift in Sources */,
+				3FAD201F23FB432300A44244 /* SceneDelegate.swift in Sources */,
+				3F441D4B2400806D009855DD /* GameUtility.swift in Sources */,
+				3F33046224004F35005B54A4 /* SettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAD202B23FB432600A44244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAD203423FB432600A44244 /* Number_Guess_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FAD203623FB432600A44244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAD203F23FB432600A44244 /* Number_Guess_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FAD203123FB432600A44244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FAD201823FB432300A44244 /* Number Guess Game */;
+			targetProxy = 3FAD203023FB432600A44244 /* PBXContainerItemProxy */;
+		};
+		3FAD203C23FB432600A44244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FAD201823FB432300A44244 /* Number Guess Game */;
+			targetProxy = 3FAD203B23FB432600A44244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3FAD202223FB432300A44244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAD202323FB432300A44244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FAD202723FB432600A44244 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FAD202823FB432600A44244 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FAD204123FB432600A44244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FAD204223FB432600A44244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FAD204423FB432600A44244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFS3BT36XV;
+				INFOPLIST_FILE = "Number Guess Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.kaiyum.Number-Guess-Game";
+				PRODUCT_NAME = "Mad Numbers";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3FAD204523FB432600A44244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFS3BT36XV;
+				INFOPLIST_FILE = "Number Guess Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.kaiyum.Number-Guess-Game";
+				PRODUCT_NAME = "Mad Numbers";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3FAD204723FB432600A44244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFS3BT36XV;
+				INFOPLIST_FILE = "Number Guess GameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.kaiyum.Number-Guess-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Number Guess Game.app/Number Guess Game";
+			};
+			name = Debug;
+		};
+		3FAD204823FB432600A44244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFS3BT36XV;
+				INFOPLIST_FILE = "Number Guess GameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.kaiyum.Number-Guess-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Number Guess Game.app/Number Guess Game";
+			};
+			name = Release;
+		};
+		3FAD204A23FB432600A44244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFS3BT36XV;
+				INFOPLIST_FILE = "Number Guess GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.kaiyum.Number-Guess-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Number Guess Game";
+			};
+			name = Debug;
+		};
+		3FAD204B23FB432600A44244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CFS3BT36XV;
+				INFOPLIST_FILE = "Number Guess GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.kaiyum.Number-Guess-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Number Guess Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FAD201423FB432300A44244 /* Build configuration list for PBXProject "Number Guess Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAD204123FB432600A44244 /* Debug */,
+				3FAD204223FB432600A44244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAD204323FB432600A44244 /* Build configuration list for PBXNativeTarget "Number Guess Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAD204423FB432600A44244 /* Debug */,
+				3FAD204523FB432600A44244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAD204623FB432600A44244 /* Build configuration list for PBXNativeTarget "Number Guess GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAD204723FB432600A44244 /* Debug */,
+				3FAD204823FB432600A44244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FAD204923FB432600A44244 /* Build configuration list for PBXNativeTarget "Number Guess GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAD204A23FB432600A44244 /* Debug */,
+				3FAD204B23FB432600A44244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FAD201123FB432300A44244 /* Project object */;
+}
